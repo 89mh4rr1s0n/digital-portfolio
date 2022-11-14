@@ -13,7 +13,7 @@ function Skills({ mySkills }: Props) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         className='relative min-h-screen text-center mx-auto flex flex-col 
-        items-center justify-center max-w-[2000px]'>
+        items-center justify-center'>
         <h3 className='mb-10 absolute top-16 tracking-[15px] uppercase text-gray-400 w-screen'>
             Skills
         </h3>
