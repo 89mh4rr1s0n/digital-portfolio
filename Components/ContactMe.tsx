@@ -45,25 +45,25 @@ export default function ContactMe({ }: Props) {
                         <input
                             {...register('name')}
                             placeholder='Name'
-                            className='contactInput'
+                            className='contactInput focus:border-theme-blue/50'
                             type="text" />
                         <input
                             {...register('email')}
                             placeholder='Email'
-                            className='contactInput'
+                            className='contactInput focus:border-theme-blue/50'
                             type="email" />
                     </div>
 
                     <input
                         {...register('subject')}
                         placeholder='Subject'
-                        className='contactInput'
+                        className='contactInput focus:border-theme-blue/50'
                         type="text" />
 
                     <textarea
                         {...register('message')}
                         placeholder='Message'
-                        className='contactInput' />
+                        className='contactInput focus:border-theme-blue/50' />
 
                     <button className='bg-theme-blue rounded-sm py-2 font-bold text-lg 
                     hover:bg-theme-blue/80 transition-all duration-150'>

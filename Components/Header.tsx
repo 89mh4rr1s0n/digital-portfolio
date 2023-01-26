@@ -24,7 +24,7 @@ export default function Header({ socials }: Props) {
                     scale: 1
                 }}
                 transition={{ duration: 1.5 }}
-                className='flex items-center'>
+                className='flex items-center bg-background-main/50 rounded-md'>
                 {/* icons */}
                 {socials.map((social) => (
                     <SocialIcon
@@ -50,7 +50,7 @@ export default function Header({ socials }: Props) {
                     scale: 1,
                 }}
                 transition={{ duration: 1.5 }}
-                className='flex items-center cursor-pointer'>
+                className='flex items-center cursor-pointer bg-background-main/50 rounded-md'>
                 <SocialIcon
                     className='cursor-pointer'
                     url='#contact'
@@ -59,7 +59,7 @@ export default function Header({ socials }: Props) {
                     bgColor='transparent'
                 />
                 <Link href="#contact">
-                    <div className='hidden sm:inline-flex'>Get In Touch</div>
+                    <div className='hidden sm:inline-flex pr-3'>Get In Touch</div>
                 </Link>
 
             </motion.div>

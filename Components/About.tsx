@@ -14,12 +14,13 @@ export default function About({ pageInfo }: Props) {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
             className='h-screen flex flex-col relative text-center justify-evenly
-         mx-auto items-center px-10 max-w-7xl'>
-            <h3 className='uppercase tracking-[15px] 
-            text-gray-400 text-l text-center w-screen'>
+         mx-auto items-center px-10'>
+            <div className='absolute spacer-2 waves-2 top-0'></div>
+            <h3 className='uppercase tracking-[15px]  z-30
+            text-gray-400 text-l text-center bg-background-main/50 w-fit pl-3 rounded-md'>
                 About
             </h3>
-            <div className='flex flex-col items-center md:flex-row'>
+            <div className='flex flex-col items-center md:flex-row z-30'>
                     <motion.img
                         initial={{
                             x: -200,
@@ -39,7 +40,7 @@ export default function About({ pageInfo }: Props) {
                     />
 
 
-                <div>
+                <div className=' z-30'>
                     <h4 className='text-xl sm:text-2xl md:text-3xl py-5 mt-5'>
                         Here is a little background
                     </h4>

@@ -4,12 +4,60 @@
 
 @layer components {
     .heroButton {
-        @apply px-6 py-2 border border-[rgb(36,36,36)] rounded-sm uppercase text-sm tracking-widest transition-all
-        text-gray-400 hover:border-blue-400/50 hover:text-theme-blue/80 bg-[rgb(36,36,36)]
+        @apply px-6 py-2 border border-background-main
+        rounded-sm uppercase text-sm tracking-widest transition-all 
+        text-gray-400 hover:border-blue-400/50 hover:text-theme-blue/80 bg-background-main/50
+    }
+
+    .spacer {
+        aspect-ratio: 840/440;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @apply w-full
+    }
+
+    .spacer-2 {
+        aspect-ratio: 840/440;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @apply w-full
+    }
+    
+
+    .circles {
+        background-image: url('../public/circle-scatter-haikei.svg');
+    }
+
+    .waves-2 {
+        background-image: url('../public/layered-waves-haikei.svg');
     }
 
     .contactInput {
-        @apply outline-none bg-slate-600 rounded-sm border-b px-3 py-1 border-[#242424] text-gray-500
-        placeholder-gray-300 transition-all focus:border-theme-blue/50 focus:text-theme-yellow
+        @apply outline-none bg-slate-600 rounded-sm border-b px-3 py-1 border-background-main 
+        text-white placeholder-gray-300 transition-all 
+    }
+
+    .waves-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .waves-1 svg {
+        position: relative;
+        display: block;
+        width: calc(127% + 1.3px);
+        height: 170px;
+        transform: rotateY(180deg);
+    }
+
+    .waves-1 .shape-fill {
+        fill: #1A8CD8;
     }
 }

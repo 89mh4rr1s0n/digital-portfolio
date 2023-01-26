@@ -15,7 +15,8 @@ module.exports = {
         'theme-coral': 'rgb(229, 89, 119)',
         'theme-yellow': 'rgb(251, 188, 5)',
         'light-black': 'rgba(34,38,40,255)',
-        'dark-black': 'rgba(24,29,31,255)'
+        'dark-black': 'rgba(24,29,31,255)',
+        'background-main': 'rgb(36, 36, 36)'
       }
     },
   },
