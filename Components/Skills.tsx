@@ -14,7 +14,7 @@ function Skills({ mySkills }: Props) {
         transition={{ duration: 1.5 }}
         className='relative min-h-screen text-center mx-auto flex flex-col 
         items-center justify-center'>
-        <h3 className='mb-10 absolute top-16 tracking-[15px] uppercase text-gray-400 w-screen'>
+        <h3 className=' py-4 tracking-[15px] uppercase text-gray-400 w-screen'>
             Skills
         </h3>
         <h3 className='tracking-[3px] uppercase mb-1 mx-auto text-center
