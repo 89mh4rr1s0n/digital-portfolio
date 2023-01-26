@@ -77,7 +77,7 @@ export default function WorkExperience({ experiences }: Props) {
 
             {/* scroll left button/ */}
             {scrollX !== 0 && (
-                <button className="absolute top-1/2 left-0 h-24 w-10 rounded-r-md z-50 text-white bg-theme-blue 
+                <button className="absolute top-1/2 left-0 h-24 w-9 rounded-r-md z-50 text-white bg-theme-blue 
               shadow-lg" onClick={() => scrollLeft(scrl.current, -width * 0.45, 300)}>
                     <ChevronLeftIcon className='h-8 w-8 bg-theme-blue' />
                 </button>
